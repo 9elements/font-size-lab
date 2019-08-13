@@ -14,13 +14,14 @@
 
     function displayMessage (evt) {
       var message = "";
-      if (evt.origin !== "https://9elements.github.io/font-size-lab") {
-        message = "You are not worthy";
-      }
-      else {
-        document.getElementById("target").style.fontSize = evt.data;
-      }
-      document.getElementById("received-message").innerHTML = message;
+      // if (evt.origin !== "https://9elements.github.io/font-size-lab") {
+      //   message = "You are not worthy";
+      // }
+      // else {
+      //   document.getElementById("target").style.fontSize = evt.data;
+      // }
+      document.getElementById("target").style.fontSize = evt.data;
+      //document.getElementById("received-message").innerHTML = message;
     }
 
     if (window.addEventListener) {
