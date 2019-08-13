@@ -9,3 +9,26 @@ html {
   box-sizing: inherit;
 }
 
+.footer {
+  background: rgba(#fff, 0.15);
+  min-height: 2rem;
+  text-align: center;
+  color: rgba(#fff, 0.6);
+  font-size: 0.875rem;
+  line-height: 1.2rem;
+  padding: 0.4rem 0;
+
+  &__heart {
+    padding: 0 0.125em;
+    color: #f09;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgba(#fff, 0.8);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
