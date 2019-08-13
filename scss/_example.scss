@@ -1,0 +1,13 @@
+
+.example {
+  background: #fff;
+  color: #002;
+  border-top: 22px solid rgba(0,0,0,0.6);
+  
+  &__text {
+    font-weight: bold;
+    margin: 0.5em;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+}

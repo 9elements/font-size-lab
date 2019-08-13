@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Text</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="example">
+  <p class="example__text" id="target" contenteditable="true">This is an example text. You may change it, if you want to!</p>
+  <p id="received-message"></p>
+  <script>
+
+    function displayMessage (evt) {
+      var message = "";
+      if (evt.origin !== "http://localhost:8000") {
+        message = "You are not worthy";
+      }
+      else {
+        document.getElementById("target").style.fontSize = evt.data;
+      }
+      document.getElementById("received-message").innerHTML = message;
+    }
+
+    if (window.addEventListener) {
+      // For standards-compliant web browsers
+      window.addEventListener("message", displayMessage, false);
+    }
+    else {
+      dow.attachEvent("onmessage", displayMessage);
+    }
+  </script>
+</body>
+</html>
