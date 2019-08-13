@@ -38,7 +38,7 @@ function update() {
   var cssResult = "calc(" + fixed + "px + " + calcFluid + "vw)";
   result.innerHTML = percent + "%";
   calc.innerHTML = cssResult;
-  resultFrame.postMessage(cssResult, "http://localhost:8000/");
+  resultFrame.postMessage(cssResult, "https://9elements.github.io/font-size-lab");
 };
 
 window.onload = function () {
