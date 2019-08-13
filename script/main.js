@@ -17,7 +17,7 @@ range.addEventListener("input", function () {
   vwSurface.setAttribute("cy", 195 - range.value * 1.7);
   pxLiquid.setAttribute("y", range.value * 1.7 + 65);
   pxSurface.setAttribute("cy", range.value * 1.7 + 65);
-  pxSurface.setAttribute("rx", range.value * 48 / 170 + 27);
+  pxSurface.setAttribute("rx", range.value * 48 / 100 + 27);
 }, false);
 
 inputFontsize.addEventListener("input", function () {
@@ -49,5 +49,5 @@ window.onload = function () {
   vwSurface.setAttribute("cy", 195 - range.value * 1.7);
   pxLiquid.setAttribute("y", range.value * 1.7 + 65);
   pxSurface.setAttribute("cy", range.value * 1.7 + 65);
-  pxSurface.setAttribute("rx", range.value * 48 / 170 + 27);
+  pxSurface.setAttribute("rx", range.value * 48 / 100 + 27);
 };

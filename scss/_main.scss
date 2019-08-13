@@ -5,14 +5,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.stage {
-  padding-top: 2vw;
-  background-image:
-    linear-gradient(270deg, #000022 0%, rgba(49, 11, 87, 0.00) 30%, rgba(49, 11, 87, 0.00) 70%, #000022 100%),
-    linear-gradient(180deg, #000022 0%, #11084E 73%, #292165 77%, #000022 100%);
-  background-repeat: no-repeat;
-}
-
 header {
   background: #002;
   padding: 1px;
@@ -31,18 +23,37 @@ h2 {
   line-height: 1.579;
 }
 
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 76em;
+  padding: 0 2em;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.stage {
+  padding-top: 2vw;
+  background-image:
+    linear-gradient(270deg, #000022 0%, rgba(49, 11, 87, 0.00) 30%, rgba(49, 11, 87, 0.00) 70%, #000022 100%),
+    linear-gradient(180deg, #000022 0%, #11084E 73%, #292165 77%, #000022 100%);
+  background-repeat: no-repeat;
+  flex-grow: 1;
+}
+
 .keyvisual {
-  width: 40%;
   min-width: 20em;
-  max-width: 24em;
+  max-width: 28em;
   display: block;
   margin: 0 auto;
 }
 
 .calculator {
-  width: 24em;
+  max-width: 22em;
   margin: 0 auto;
   font-size: calc(14px + 0.42vw);
+  flex-grow: 1;
 }
 
 .font-size-control {
@@ -68,7 +79,7 @@ h2 {
 
 label {
   display: inline-block;
-  width: 15ch;
+  width: 13ch;
   text-align: left;
   flex-grow: 1;
 }
@@ -91,7 +102,7 @@ input[type=number] {
 
 iframe {
   display: block;
-  margin: 1em auto 2em;
+  margin: 2em auto 2em;
   max-width: 90%;
   width: 100%;
   min-width: 12em;
@@ -120,12 +131,11 @@ iframe {
 }
 
 #calc {
-  font-size: 1.8em;
-  margin: 1em 0;
+  font-size: 1.6em;
+  margin: 1em 0 0;
   background: rgba(255, 255, 255, 0.15);
   padding: 0.5em 1ch;
   border-radius: 0.25em;
-  //box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3) inset;
   border: 2px solid rgba(255,255,255,0.05);
   font-family: monospace;
   text-align: left;
@@ -136,7 +146,7 @@ iframe {
 
 input[type=range] {
   -webkit-appearance: none;
-  width: 24em;
+  width: 10em;
   background: transparent;
   flex-grow: 999;
   height: 2.75rem;
