@@ -219,3 +219,11 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd;
 }
+
+.iframe-container {
+  max-width: calc(100% - 2em);
+  margin: 2em auto;
+  overflow: auto;
+  resize: horizontal;
+  height: 20em;
+}
